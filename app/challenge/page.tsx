@@ -243,7 +243,8 @@ export default function ChallengePage() {
               </CardHeader>
               <CardContent>
                 <div className="border-2 border-primary/30 rounded-lg bg-white shadow-inner transition-all duration-300 hover:shadow-lg hover:border-primary/50">
-                  <GraffitiCanvas ref={graffitiCanvasRef} />
+                  <GraffitiCanvas ref={graffitiCanvasRef} onDrawEnd={() => {}} />
+
                 </div>
               </CardContent>
             </Card>
