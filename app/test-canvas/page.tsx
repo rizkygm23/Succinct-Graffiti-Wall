@@ -5,11 +5,11 @@ export default function TestCanvasPage() {
   return (
     <div style={{ background: "#eee", padding: 20 }}>
       <ReactSketchCanvas
-        width={500}
-        height={300}
+        width="500"
+        height="300"
         style={{ border: "2px solid #333" }}
-        onStrokeEnd={() => {
-          console.log("Basic: onStrokeEnd fired");
+        onStroke={() => {
+    console.log("Basic: onStroke fired");
         }}
       />
       <p>Coba coret-coret di sini dan lihat log Console!</p>

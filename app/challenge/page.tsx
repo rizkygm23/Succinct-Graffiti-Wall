@@ -241,8 +241,8 @@ export default function ChallengePage() {
                   Let your creativity flow! Draw your interpretation of the challenge.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="border-2 border-primary/30 rounded-lg bg-white shadow-inner transition-all duration-300 hover:shadow-lg hover:border-primary/50">
+              <CardContent className="h-fit">
+                <div className="border-2 border-primary/30 rounded-lg bg-white shadow-inner transition-all duration-300 hover:shadow-lg hover:border-primary/50 h-full max-w-[400px] md:h-[400px] mx-auto">
                   <GraffitiCanvas ref={graffitiCanvasRef} onDrawEnd={() => {}} />
 
                 </div>

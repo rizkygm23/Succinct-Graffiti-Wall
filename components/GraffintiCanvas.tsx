@@ -57,16 +57,18 @@ const GraffitiCanvas = forwardRef(function GraffitiCanvas(
   }
 
   return (
-    <div className="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-md transition-all duration-300 hover:shadow-lg hover:border-primary/50">
+    <div className="border border-gray-200 rounded-lg overflow-hidden  bg-white shadow-md transition-all duration-300 hover:shadow-lg hover:border-primary/50 flex flex-col h-full">
       <ReactSketchCanvas
         ref={canvasRef}
-        width={800}
-        height={400}
+        width="100%"
+        height="100%"
         style={{ borderRadius: 8, background: "#fafafa" }}
         strokeWidth={strokeWidth}
         strokeColor={strokeColor}
-        onStrokeEnd={handleStrokeEnd}
+        onStroke={handleStrokeEnd}
+       
         allowOnlyPointerType="all"
+       
       />
       <div className="flex flex-col sm:flex-row gap-3 p-3 border-t border-gray-200 bg-gray-50 items-center">
         <div className="flex items-center gap-2">
